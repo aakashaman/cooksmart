@@ -7,9 +7,12 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <a className="navbar-item" href="#">
-          COOKFOOD
+    
+        <a className="navbar-logo" href="#">
+          COOKSMART
         </a>
+
+        
         <a role="button" className={`navbar-burger burger ${isOpen ? 'is-active' : ''}`} onClick={() => setIsOpen(!isOpen)}>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
