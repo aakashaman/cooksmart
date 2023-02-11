@@ -22,21 +22,20 @@ const Navbar = () => {
             Home
           </a>
           <a className="navbar-item" href="#">
-            About
+            Recipes
           </a>
           <a className="navbar-item" href="#">
-            Contact
-          </a>
+            About          </a>
         </div>
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <a className="button is-primary" href="#">
+              <button className="buttonnav" href="#">
                 Sign up
-              </a>
-              <a className="button is-light" href="#">
+              </button>
+              <button className="buttonnav" href="#">
                 Log in
-              </a>
+              </button>
             </div>
           </div>
         </div>
