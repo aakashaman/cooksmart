@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import video from './vid.mp4';
+import image from './search-bar.png';
 
 const Hero = () => {
   return (
@@ -13,8 +14,8 @@ const Hero = () => {
       </div>
       <form className="search-form" style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
         <label>
-          Search your Recipe
-          <input type="text" />
+          <input class="search-bar" type="text" placeholder="Search Your items here to find awesome receipe...."  />
+          <img src={image} className="searchicon" />
         </label>
       </form>
     </section>
