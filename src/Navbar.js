@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css'
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -11,6 +12,8 @@ const Navbar = () => {
         <a className="navbar-logo" href="#">
           COOKSMART
         </a>
+       
+      
 
         
         <a role="button" className={`navbar-burger burger ${isOpen ? 'is-active' : ''}`} onClick={() => setIsOpen(!isOpen)}>
