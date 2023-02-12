@@ -14,7 +14,7 @@ const Hero = () => {
       </div>
       <form className="search-form" style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
         <label>
-          <input class="search-bar" type="text" placeholder="Search Your items here to find awesome receipe..../"  />
+          <input class="search-bar" type="text" placeholder="Search Your items here to find awesome receipe...."  />
           <img src={image} className="searchicon" />
         </label>
       </form>
