@@ -1,6 +1,6 @@
-import React from 'react';
-import './Navbar.css'
-
+import React from "react";
+import "../Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -8,30 +8,31 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-    
         <a className="navbar-logo" href="#">
           COOKSMART
         </a>
-       
-      
 
-        
-        <a role="button" className={`navbar-burger burger ${isOpen ? 'is-active' : ''}`} onClick={() => setIsOpen(!isOpen)}>
+        <a
+          role="button"
+          className={`navbar-burger burger ${isOpen ? "is-active" : ""}`}
+          onClick={() => setIsOpen(!isOpen)}
+        >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div className={`navbar-menu ${isOpen ? 'is-active' : ''}`}>
+      <div className={`navbar-menu ${isOpen ? "is-active" : ""}`}>
         <div className="navbar-start">
-          <a className="navbar-item" href="#">
+          <Link className="navbar-item" to="/">
             Home
-          </a>
-          <a className="navbar-item" href="#">
+          </Link>
+          <Link className="navbar-item" to="/recipe">
             Recipes
-          </a>
-          <a className="navbar-item" href="#">
-            About          </a>
+          </Link>
+          <Link className="navbar-item" to="about">
+            About
+          </Link>
         </div>
         <div className="navbar-end">
           <div className="navbar-item">

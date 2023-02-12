@@ -1,7 +1,7 @@
 import React from 'react';
-import './Hero.css';
-import video from './vid.mp4';
-import image from './search-bar.png';
+import '../Hero.css';
+import video from '../vid.mp4';
+import image from '../search-bar.png';
 
 const Hero = () => {
   return (
