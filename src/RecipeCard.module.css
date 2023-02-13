@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+.card {
+  height: 50vh;
+  width: 20vw;
+  background-color: rgb(139, 187, 187);
+  display: grid;
+  /* grid-template-rows: 1fr 2fr; */
+}
+
+.image {
+  width: 20vw;
+  height: 20vh;
+  object-fit: cover;
+}
